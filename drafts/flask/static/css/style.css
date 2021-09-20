@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+}
+
+header {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#title {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.list_input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.input {
+    width: 50%;
+}

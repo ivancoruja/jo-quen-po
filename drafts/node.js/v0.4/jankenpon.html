@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jankenpon.css">
+    <title>jan-ken-pon</title>
+</head>
+
+<body>
+    <header>
+        <h1>jan-ken-pon</h1>
+    </header>
+
+    <div class="score">
+        <div id="player-side" class="side">você</div>
+        <div id="computer-side" class="side">computador</div>
+        <span id="player-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="outcome">
+        <p>Pedra quebra Tesoura... Você perdeu!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="images/rock.png" alt="pedra" height="80" width="80">
+        </div>
+        <div class="choice" id="paper">
+            <img src="images/paper.png" alt="papel" height="80" width="80">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="images/scissors.png" alt="tesoura" height="80" width="80">
+        </div>
+    </div>
+
+    <p id="prompt-move">Qual é sua jogada?</p>
+
+    <section>
+        <div id="matches">
+            <button onclick="setGame()">Jogar!</button>
+        </div>
+        <div>
+            <p id="player">
+                <button id="pedra" onclick="playerChoice(1)">Pedra</button>
+                <button id="papel" onclick="playerChoice(2)">Papel</button>
+                <button id="tesoura" onclick="playerChoice(3)">Tesoura</button>
+            </p>
+            <p>
+                <button onclick="playGame()">Jogar!</button>
+            </p>
+        </div>
+
+    </section>
+</body>
+
+<script type="text/javascript" src="jankenpon.js"></script>
+
+</html>

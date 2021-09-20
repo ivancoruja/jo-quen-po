@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jankenpo.css">
+    <title>Jan-Ken-Po</title>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <nav>
+    
+    </nav>
+    <section>
+        <div>
+            <h1>Jan-Ken-Po</h1>
+        </div>
+        <div id="matches">
+            <button onclick="setGame()">Jogar!</button>
+        </div>
+        <div>
+            <p id="player">
+                <button id="pedra" onclick="playerChoice(1)">Pedra</button>
+                <button id="papel" onclick="playerChoice(2)">Papel</button>
+                <button id="tesoura" onclick="playerChoice(3)">Tesoura</button>
+            </p>
+            <p>
+                <button onclick="playGame()">Jogar!</button>
+            </p>
+        </div>
+
+    </section>
+</body>
+
+<script type="text/javascript" src="jankenpo.js"></script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">{{list_name}}</h1>
+    </header>
+
+    <div>
+        <form class="list_input" action="/form_action" method="POST">
+            <label for="item">new task:</label>
+            <input type="text" name="item" id="item">
+            <button type="submit">add</button>
+        </form>
+    </div>
+
+    <div>
+        <button id="clear" onclick="window.location.reload()" id="clear">clear</button>
+    </div>
+
+    <div>
+        <ul>
+            {% for item in items %}
+                <li class="items">{{item}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="../static/js/script.js"></script>
+
+    <!-- <div>
+        {% if list_full %}
+        
+        {% else %}
+        <h2>The list is</h2>
+        {% endif %}
+    </div> -->
+
+</body>
+
+</html>
